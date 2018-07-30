@@ -13,8 +13,11 @@ public class User {
     private String userName;
 
     private String password;
-
-    private Integer age;
+    
+    public User(String userName, String password) {
+    	this.userName = userName;
+    	this.password = password;
+    }
 
     public Integer getId() {
         return id;
@@ -40,11 +43,4 @@ public class User {
         this.password = password == null ? null : password.trim();
     }
 
-    public Integer getAge() {
-        return age;
-    }
-
-    public void setAge(Integer age) {
-        this.age = age;
-    }
 }

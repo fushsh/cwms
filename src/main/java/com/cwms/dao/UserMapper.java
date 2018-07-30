@@ -10,6 +10,9 @@ import com.cwms.model.User;
  *
  */
 public interface UserMapper {
+	
+	public int validation_information(User user);
+	
 	int deleteByPrimaryKey(Integer id);
 
     int insert(User record);
